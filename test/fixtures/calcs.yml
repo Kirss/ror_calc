@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  aktsia_nimi: MyString
+  hind: MyString
+  decimal: MyString
+  kogus: 1
+  protsent: 9.99
+  aastad: 1
+
+two:
+  aktsia_nimi: MyString
+  hind: MyString
+  decimal: MyString
+  kogus: 1
+  protsent: 9.99
+  aastad: 1

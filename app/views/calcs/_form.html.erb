@@ -1,0 +1,37 @@
+<%= form_for(@calc) do |f| %>
+  <% if @calc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@calc.errors.count, "error") %> prohibited this calc from being saved:</h2>
+
+      <ul>
+      <% @calc.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :aktsia_nimi %><br />
+    <%= f.text_field :aktsia_nimi %>
+  </div>
+  <div class="field">
+    <%= f.label :hind %><br />
+    <%= f.text_field :hind %>
+  </div>
+  <div class="field">
+    <%= f.label :kogus %><br />
+    <%= f.number_field :kogus %>
+  </div>
+  <div class="field">
+    <%= f.label :protsent %><br />
+    <%= f.text_field :protsent %>
+  </div>
+  <div class="field">
+    <%= f.label :aastad %><br />
+    <%= f.number_field :aastad %>
+  </div>
+  <div class="actions">
+    <%= f.submit :Kinnita %>
+  </div>
+<% end %>
